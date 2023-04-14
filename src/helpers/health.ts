@@ -5,7 +5,7 @@ class RouterHealth {
 
 	constructor() {
 		this.expressRouter = Router()
-        this.mountRoutes()
+		this.mountRoutes()
 	}
 
 	mountRoutes() {
@@ -14,3 +14,8 @@ class RouterHealth {
 }
 
 export default new RouterHealth().expressRouter
+
+
+// req.params || req.query (formato json)
+// req.headers || (formato json)
+// req.body || (no viene en formato json)
