@@ -1,0 +1,17 @@
+{
+  "root": true /*definir que trabaje en la carpeta root donde se encuentra el eslint*/,
+  "plugins": ["@typescript-eslint"] /* definimos que todos los plugins y parsers son heredaders de typescript*/,
+  "parser": "@typescript-eslint/parser" /* añadirle reglas especificas de ts al eslint*/,
+  "extends": [
+    /* plugins de soporte para ts para eslint*/ "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    /*me permite especificar mi objeto de reglas a monitorear en el codigo*/
+    "quotes": ["error", "single"] /* si no tenemos comillas simples lo toma como error */,
+    "@typescript-eslint/no-explicit-any": ["warn"] /* si hay tipos "any" los toma como warn */,
+    "curly": "error" /* si hay definiciones faltantes con {} me tira error */,
+    "no-empty": "error" /* no se aceptan definiciones vacias */
+  }
+}
