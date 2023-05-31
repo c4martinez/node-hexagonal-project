@@ -11,7 +11,7 @@
     "emitDecoratorMetadata": true /* me permite la data que generen los decoradores persitan en tiempo*/,
     "strict": false /* me permite identificar algunas definiciones de codigo estandar*/,
     "baseUrl": "./" /* me permite definir donde alojare mi directorio que tiene el directorio que tiene el codigo para producción*/,
-    "outDir": "./build" /* este es el directorio con mi codigo js para producción*/
+    "outDir": "./cache" /* este es el directorio con mi codigo js para producción*/
   },
   "exclude": ["node_modules"] /* me permite ignorar el directorio de node modules*/,
   "include": ["src/**/*.ts"] /* me permite definir donde se va a encontrar mi codigo a compilar/transpilar*/
