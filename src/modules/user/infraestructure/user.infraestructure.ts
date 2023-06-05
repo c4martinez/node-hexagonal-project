@@ -1,10 +1,11 @@
-import User, { UserUpdate } from '../domain/user'
+import User from '../domain/user'
 import { UserRepository } from '../domain/user.repository'
 import { UserEntity } from './user.entity'
 import DatabaseBootstrap from '../../../bootstrap/database.bootstrap'
 import { EmailVO } from '../domain/value-objects/email.vo'
 import { UserEmailInvalidException, UserNotFoundException } from '../domain/exceptions/user.exception'
 import { err, Result, ok } from 'neverthrow'
+import { UserUpdate } from '../domain/interfaces/userUpdate.interface'
 
 export default class UserInfraestructure implements UserRepository {
 	async insert(user: User): Promise<User> {

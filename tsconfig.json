@@ -1,18 +1,21 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS" /* me permite que cuando procese mi codigo de ts luego de compilacion/transpilacion se pase a js nativo */,
-    "esModuleInterop": true /* Me permite tener compatibilidad con otras extensiones y modulos de otros lenguajes y del mismo entorno*/,
-    "resolveJsonModule": true /* me permite darle soporte a importar en mi codigo archivos json*/,
-    "moduleResolution": "node" /* Me permite darle soporte absoluto a typescrip */,
-    "target": "ES2020" /* Me permite especificar la estandarización de ECMMA SCRIPT para mi proyecto*/,
-    "noImplicitAny": true /* Me permite definir que no me recomiende tipar con tipos any por default*/,
-    "sourceMap": true /* Me permite crear un archivo js raiz identificador para cada archivo generado a partir de ts*/,
-    "experimentalDecorators": true /* Me permite darle soporte a mi proyecto para trabajar con decoradores*/,
-    "emitDecoratorMetadata": true /* me permite la data que generen los decoradores persitan en tiempo*/,
-    "strict": false /* me permite identificar algunas definiciones de codigo estandar*/,
-    "baseUrl": "./" /* me permite definir donde alojare mi directorio que tiene el directorio que tiene el codigo para producción*/,
-    "outDir": "./cache" /* este es el directorio con mi codigo js para producción*/
-  },
-  "exclude": ["node_modules"] /* me permite ignorar el directorio de node modules*/,
-  "include": ["src/**/*.ts"] /* me permite definir donde se va a encontrar mi codigo a compilar/transpilar*/
+	"compilerOptions": {
+		"module": "CommonJS" /* me permite que cuando procese mi codigo de ts luego de compilacion/transpilacion se pase a js nativo */,
+		"esModuleInterop": true /* Me permite tener compatibilidad con otras extensiones y modulos de otros lenguajes y del mismo entorno*/,
+		"resolveJsonModule": true /* me permite darle soporte a importar en mi codigo archivos json*/,
+		"moduleResolution": "node" /* Me permite darle soporte absoluto a typescrip */,
+		"target": "ES2020" /* Me permite especificar la estandarización de ECMMA SCRIPT para mi proyecto*/,
+		"noImplicitAny": true /* Me permite definir que no me recomiende tipar con tipos any por default*/,
+		"sourceMap": true /* Me permite crear un archivo js raiz identificador para cada archivo generado a partir de ts*/,
+		"experimentalDecorators": true /* Me permite darle soporte a mi proyecto para trabajar con decoradores*/,
+		"emitDecoratorMetadata": true /* me permite la data que generen los decoradores persitan en tiempo*/,
+		"strict": false /* me permite identificar algunas definiciones de codigo estandar*/,
+		"baseUrl": "./" /* me permite definir donde alojare mi directorio que tiene el directorio que tiene el codigo para producción*/,
+		"outDir": "./cache" /* este es el directorio con mi codigo js para producción*/
+	},
+	"exclude": ["node_modules"] /* me permite ignorar el directorio de node modules*/,
+	"include": [
+		"src/**/*.ts",
+		"test/**/*.ts"
+	] /* me permite definir donde se va a encontrar mi codigo a compilar/transpilar*/
 }

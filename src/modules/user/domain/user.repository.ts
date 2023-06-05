@@ -1,6 +1,7 @@
 import { Result } from 'neverthrow'
-import User, { UserUpdate } from './user'
+import User from './user'
 import { UserNotFoundException } from './exceptions/user.exception'
+import { UserUpdate } from './interfaces/userUpdate.interface'
 // principio SOLID: inversion dependecy
 export interface UserRepository {
 	// desing pattern Facede: https://refactoring.guru/es/design-patterns/facade

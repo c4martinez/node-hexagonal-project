@@ -8,22 +8,9 @@ const databaseBootstrap: Bootstrap = new DatabaseBootstrap()
 
 ;(async () => {
 	try {
+		await databaseBootstrap.initialize(), console.log('Database started successfylly')
 		await serverBootstrap.initialize()
-		await databaseBootstrap.initialize()
-		console.log('server started successfully')
 	} catch (error) {
 		console.log(error)
 	}
 })()
-
-//otra forma seria esta
-
-/*const start = async () => {
-  try {
-    const resultServer = await serverBootstrap.initialize()
-    console.log(resultServer)
-  } catch (error) {
-    console.log(error)
-  } 
-}
-start()*/

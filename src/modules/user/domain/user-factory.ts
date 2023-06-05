@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
-import User, { UserProperties } from './user'
+import User from './user'
 import { UserPasswordService } from './services/user-password.service'
 import { EmailVO } from './value-objects/email.vo'
 import {
@@ -9,6 +9,7 @@ import {
 	UserPasswordLengthInvalidException,
 } from './exceptions/user.exception'
 import { err, ok, Result } from 'neverthrow'
+import { UserProperties } from './types/userProperties.type'
 
 export type UserResult = Result<
 User,
